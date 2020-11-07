@@ -39,4 +39,4 @@ def getScores(team1: str, team2: str, driver):
     print(score1, score2)
 
     """
-    return((score1, score2))
+    return((int(score1), int(score2)))

@@ -4,7 +4,6 @@ import sys
 import time
 import threading
 
-#from phue import Bridge
 
 try:
     import wx
@@ -12,35 +11,6 @@ except ImportError:
     print("The wxPython module is required to run this program")
     sys.exit()
 
-"""bridge_ip_address = 'ip_address'
-b = Bridge(bridge_ip_address)
-b.connect()
-
-def access_lights(bridge_ip_address):
-    b = Bridge(bridge_ip_address)
-    light_names_list = b.get_light_objects('name')
-    return light_names_list
-
-def green():
-    lights = access_lights(bridge_ip_address)
-    for light in lights:
-        lights[light].on = True
-        lights[light].hue = 7000
-        lights[light].saturation = 100
-
-def amber():
-    lights = access_lights(bridge_ip_address)
-    for light in lights:
-        lights[light].on = True
-        lights[light].hue = 7000
-        lights[light].saturation = 100
-
-def red():
-    lights = access_lights(bridge_ip_address)
-    for light in lights:
-        lights[light].on = True
-        lights[light].hue = 180
-        lights[light].saturation = 100"""
 app = wx.App()
 
 class Home(wx.Frame):
